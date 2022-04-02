@@ -1,0 +1,394 @@
+#Main_Form
+{
+	width: 900px;
+	max-width: 900px;
+	min-width: 400px;
+	float: left;
+	margin-left: 10px;
+	z-index: 5;
+	position:absolute;
+	color: white;
+	
+}
+
+h4,h1,h2,h3
+{
+	cursor: default;
+}
+
+#Main_Form_bg
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+
+	opacity: .3;
+	display: none;
+	z-index: 4;
+}
+
+#Main_Form h1
+{
+	font-size: .750em;
+	font-family: Open Sans;
+	background-color: #f39c12;
+	padding-left: 10px;
+	border-top-left-radius:	.5em;
+	border-top-right-radius:.5em;
+	height: 40px;
+	line-height: 40px;
+	margin: 0px;
+	cursor: default;
+	-moz-text-shadow: 5px 5px 5px black;
+	-webkit-text-shadow: 5px 5px 5px black;
+	-o-text-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 2px black;
+	
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+	user-select: none; 
+}
+
+#Main_Form h1 a:hover { text-decoration: underline; }
+#Main_Form h1 a
+{
+	font-family: Open Sans;
+}
+
+
+#Main_Form .body
+{
+	font-family: Open Sans;
+	font-size: .95em;
+	color: Black;
+	margin: 0px;
+	border-bottom-left-radius:	.5em;
+	border-bottom-right-radius:.5em;
+	line-height: 30px;
+	background-color: white;
+	background-color: #EBEBEB;
+	height:100%;
+}
+
+#Main_Form .body .side_nav
+{
+	width: 50px;
+	height: 100%;
+	float:left;
+	display: inline-block;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+	user-select: none; 
+}
+#Main_Form .side_button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	background-size: 20px 20px;
+}
+
+.side_button#close
+{
+	background-image: url(../image/close.png);
+	height: 40px;
+	width: 40px;
+	float:right;
+	border-top-right-radius:.5em;
+}
+
+.side_button#close:hover 
+{
+	background-color: #e67e22;
+}
+ 
+#Main_Form .body .side_nav .side_button
+{
+	background-color:transparent;
+	width:50px;
+	height:50px;
+
+}
+#Main_Form .body .side_nav .side_button:not(.selected):hover
+{
+	background-color:#E1E1E1;
+}
+
+#Main_Form .body .side_nav .side_button.selected
+{
+	cursor: default;
+	background-color: white;
+}
+#Main_Form .body .side_nav .side_button#Branches
+{
+	background-image: url(../image/home.png);
+}
+#Main_Form .body .side_nav .side_button#logs
+{
+	background-image: url(../image/table.png);
+}
+#Main_Form .body .side_nav .side_button#Setting
+{
+	background-image: url(../image/setting.png);
+}
+
+#Main_Form .body .content
+{
+	background-color:white;
+    margin-left: 50px;
+	padding: 10px;
+	border-bottom-right-radius:.5em;
+	display: block;
+	height:100%;
+}
+#Main_Form .body .content table
+{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Main_Form .body .content table.form tr td:nth-child(odd)
+{
+	padding-left: 15px;
+}
+
+
+#Main_Form .body > div
+{
+	min-height: 400px;
+}
+
+
+.textbox
+{
+	width: 100%;
+	min-width: 50px;
+	margin: 10 auto;
+	margin-left: 10px;
+	background-color: white;
+	border: 1px solid #bdc3c7;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	display: inline-block;
+}
+.textbox.button
+{
+	text-align: center;
+	cursor:pointer;
+	font-family: Open Sans;
+	background-color: #f39c12;
+	color: white;
+	border: none;
+	width: 50px;
+	float: right;
+	margin-right: 5px;
+}
+.textbox.button.disabled
+{
+	cursor: default;
+	background-color:#ecf0f1;
+}
+
+.textbox.disabled
+{
+	background-color:#ecf0f1;
+}	
+.textbox input{
+	width: 85%;
+	margin: 6 auto;
+	margin-left: 10px;
+	background:transparent;
+	border: none;
+	outline-width: 0;
+}
+
+.textarea
+{
+	width: 100%;
+	min-width: 50px;
+	margin: 10 auto;
+	margin-left: 10px;
+	background-color: white;
+	border: 1px solid #bdc3c7;
+	display: inline-block;
+	-moz-box-shadow: 1px 1px 1px #C5C5C5;
+	-webkit-box-shadow: 1px 1px 1px #C5C5C5;
+	-o-box-shadow: 1px 1px 1px #C5C5C5;
+	box-shadow: 1px 1px 2px #C5C5C5;
+	
+}
+
+.textarea textarea{
+	margin: 6 auto;
+	margin-left: 10px;
+	background:transparent;
+	border: none;
+	outline-width: 0;
+	width:97%; 
+	resize:vertical;
+	height: 200px;
+	margin-top:5px;
+}
+
+.flat-table 
+{    border-spacing:0;
+    border-collapse:collapse;
+}
+.flat-table tr td
+{
+	padding-left: 5px;
+	border-right: 1px solid white;
+}
+
+.flat-table tr td.AddRow
+{
+	background-color: #4ADD76;
+	color: white;
+	border-bottom-left-radius:	.5em;
+	border-bottom-right-radius:.5em;
+	cursor: pointer;
+}
+
+.flat-table tr td.AddRow:hover
+{
+	background-color: #22B124;
+}
+
+
+.flat-table tr:nth-child(even),.flat-table tr:nth-child(even) a{
+	background-color: white;
+	color: black;
+}
+.flat-table tr:nth-child(odd),.flat-table tr:nth-child(odd) a{
+	background-color: #EEEEEE;
+	color: #C3C3C3;
+}
+
+.flat-table tr
+{
+	border-left: 2px solid white;
+	//border-right: 2px solid white;
+}
+.flat-table tr:not(:last-child):hover
+{
+	border-left: 2px solid #22B124;
+	//border-right: 2px solid #22B124;
+}
+.flat-table tr.page_selection
+{
+	background-color: #EEEEEE;
+	color: #C3C3C3;
+	border-top: solid 1px white;
+}
+
+.flat-table tr.main
+{
+	background-color: #C3C3C3;
+	padding-left: 5px;
+	color: white;
+	font-weight: bold;
+	
+}
+
+.flat-table tr a:hover
+{
+	text-decoration: underline;
+	color: #d35400;
+}
+
+
+div.slider
+{
+	width: 80%;
+	height: 10px;
+	background-color: #EBEBEB;
+	border-radius:	.5em;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	user-select: none; 
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+div.slider .button
+{
+	height:10px;
+	display:inline;
+	float:left;
+}
+
+div.slider .button:first-child {  
+	border-top-left-radius:	.5em;
+	border-bottom-left-radius:	.5em;
+}
+
+div.slider .button:last-child { 
+	border-top-right-radius:	.5em;
+	border-bottom-right-radius:	.5em;
+}
+
+
+
+div.slider .button:not(.selected):hover
+{
+	background-color:#E1E1E1;
+}
+
+div.slider .button.selected
+{
+	cursor:default;
+	background-color: #d35400;
+	
+}
+
+#download_link
+{
+	background-color: #4ADD76;
+	border: 1px solid white;
+}
+#download_link a
+{
+	background-color: #4ADD76;
+	color: white;
+	cursor: pointer;
+}
+
+#pending_download_link
+{
+	background-color: orange;
+	border: 1px solid white;
+}
+#pending_download_link a
+{
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+}
+
+#WarningMessageBox
+{
+	color: orange;
+}
+
+#ErrMessageBox
+{
+	color: red;
+}
+
+#MessageBox
+{
+	color: green;
+}
